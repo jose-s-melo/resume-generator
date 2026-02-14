@@ -1,0 +1,26 @@
+name: Fulano de Tal
+
+contact:
+  phone: "(99) 99999-9999"
+  email: "fulano@email.com"
+  github: "https://github.com/fulano-de-tal-github"
+  github_label: "fulanodetal"
+  linkedin: "https://linkedin.com/in/fulano-de-tal-linkedin"
+  linkedin_label: "fulanodetal"
+
+education:
+  - institution: "Universidade Federal do Brasil"
+    degree: "Bacharelado em Ciência da Computação"
+    period: "Julho 2020 - 2025"
+    description: "Estrutura de dados e algoritmos, Banco de dados, Matemática discreta, Engenharia e Arquitetura de Software"
+
+projects:
+  - name: "Meu Projeto"
+    link: "https://github.com/fulano-de-tal-github/meu-projeto"
+    link_label: "fulano-de-tal/meu-projeto"
+    description:
+      - "Implementação de API completa com Java e Spring Boot containerizada em Docker;"
+      - "Requisições com Axios e Javascript;"
+      - "Interface com React e Tailwind CSS;"
+      - "Autenticação com Spring Boot Security e JWT;"
+      - "Testes com Mockito e Postman."
