@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }} - Currículo</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- CABEÇALHO -->
+        <div class="header">
+            <h1>{{ name }}</h1>
+
+            {% if summary %}
+                <p class="summary">{{ summary }}</p>
+            {% endif %}
+
+            <p class="contact">
+                {{ contact.phone }} |
+                <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> |
+                GitHub: <a href="{{ contact.github }}">{{ contact.github_label }}</a> |
+                LinkedIn: <a href="{{ contact.linkedin }}">{{ contact.linkedin_label }}</a>
+            </p>
+        </div>
+
+
+        <!-- EXPERIÊNCIA -->
+        <div class="section">
+            <h2>Experiência</h2>
+            <div class="section-line"></div>
+
+            {% for job in experience %}
+            <div class="item">
+                <div class="item-header">
+                    <strong>{{ job.role }} - {{ job.company }}</strong>
+                    <span class="date">{{ job.period }}</span>
+                </div>
+
+                <ul>
+                    {% for bullet in job.description %}
+                    <li>{{ bullet }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- EDUCAÇÃO -->
+        <div class="section">
+            <h2>Educação</h2>
+            <div class="section-line"></div>
+
+            {% for edu in education %}
+            <div class="item">
+                <div class="item-header">
+                    <strong>{{ edu.institution }}</strong>
+                    <span class="date">{{ edu.period }}</span>
+                </div>
+                <div>{{ edu.degree }}</div>
+                <div class="description">{{ edu.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+
+
+        <!-- PROJETOS PESSOAIS -->
+        <div class="section">
+            <h2>Projetos Pessoais</h2>
+            <div class="section-line"></div>
+
+            {% for project in projects %}
+            <div class="item">
+                <strong>
+                    {{ project.name }}
+                    {% if project.link %}
+                    (Código fonte disponível em:
+                    <a href="{{ project.link }}">{{ project.link_label }}</a>)
+                    {% endif %}
+                </strong>
+
+                <ul>
+                    {% for bullet in project.description %}
+                    <li>{{ bullet }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</body>
+</html>
