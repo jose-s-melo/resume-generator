@@ -8,11 +8,33 @@ contact:
   linkedin: "https://linkedin.com/in/fulano-de-tal-linkedin"
   linkedin_label: "fulanodetal"
 
+experience:
+  - company: "Software X"
+    role: "Software Engineer"
+    period: "Jan 2023 - Present"
+    description:
+      - "Desenvolvimento de APIs REST com Java e Spring Boot;"
+      - "Integração com PostgreSQL e Redis;"
+      - "Containerização com Docker."
+
+  - company: "Startup Y"
+    role: "Trainee"
+    period: "Jul 2022 - Dez 2022"
+    description:
+      - "Manutenção de sistemas internos;"
+      - "Criação de endpoints REST;"
+      - "Testes automatizados com JUnit."
+
 education:
   - institution: "Universidade Federal do Brasil"
     degree: "Bacharelado em Ciência da Computação"
     period: "Julho 2020 - 2025"
     description: "Estrutura de dados e algoritmos, Banco de dados, Matemática discreta, Engenharia e Arquitetura de Software"
+
+  - institution: "Instituto de Tecnologia do Estado"
+    degree: "Curso Técnico em Informática"
+    period: "Janeiro 2017 - Dezembro 2019"
+    description: "Programação, Redes de Computadores, Manutenção de Hardware, Sistemas Operacionais"
 
 projects:
   - name: "Meu Projeto"
@@ -21,6 +43,15 @@ projects:
     description:
       - "Implementação de API completa com Java e Spring Boot containerizada em Docker;"
       - "Requisições com Axios e Javascript;"
+      - "Interface com React e Tailwind CSS;"
+      - "Autenticação com Spring Boot Security e JWT;"
+      - "Testes com Mockito e Postman."
+
+  - name: "Projeto Pessoal"
+    link: "https://github.com/fulano-de-tal-github/projeto-pessoal"
+    link_label: "fulano-de-tal/projeto-pessoal"
+    description:
+      - "Desenvolvimento de um sistema com Java e Spring Boot;"
       - "Interface com React e Tailwind CSS;"
       - "Autenticação com Spring Boot Security e JWT;"
       - "Testes com Mockito e Postman."
