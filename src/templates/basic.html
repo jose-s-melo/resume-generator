@@ -11,22 +11,27 @@
 
         <!-- CABEÇALHO -->
         <div class="header">
+            {% if name %}
             <h1>{{ name }}</h1>
+            {% endif %}
 
             {% if summary %}
                 <p class="summary">{{ summary }}</p>
             {% endif %}
 
+            {% if contact %}
             <p class="contact">
                 {{ contact.phone }} |
                 <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> |
                 GitHub: <a href="{{ contact.github }}">{{ contact.github_label }}</a> |
                 LinkedIn: <a href="{{ contact.linkedin }}">{{ contact.linkedin_label }}</a>
             </p>
+            {% endif %}
         </div>
 
 
         <!-- EXPERIÊNCIA -->
+        {% if experience %}
         <div class="section">
             <h2>Experiência</h2>
             <div class="section-line"></div>
@@ -46,12 +51,14 @@
             </div>
             {% endfor %}
         </div>
+        {% endif %}
 
         <!-- EDUCAÇÃO -->
         <div class="section">
             <h2>Educação</h2>
             <div class="section-line"></div>
 
+            {% if education %}
             {% for edu in education %}
             <div class="item">
                 <div class="item-header">
@@ -62,6 +69,7 @@
                 <div class="description">{{ edu.description }}</div>
             </div>
             {% endfor %}
+            {% endif %}
         </div>
 
 
@@ -70,6 +78,7 @@
             <h2>Projetos Pessoais</h2>
             <div class="section-line"></div>
 
+            {% if projects %}
             {% for project in projects %}
             <div class="item">
                 <strong>
@@ -87,6 +96,7 @@
                 </ul>
             </div>
             {% endfor %}
+            {% endif %}
         </div>
 
     </div>
