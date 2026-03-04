@@ -57,3 +57,11 @@ projects:
       - "Interface com React e Tailwind CSS;"
       - "Autenticação com Spring Boot Security e JWT;"
       - "Testes com Mockito e Postman."
+
+academic_experience:
+  - title: "Monitor de Ciências"
+    institution: "Universidade Federal do Brasil"
+    period: "Junho 2021 - Outubro 2022"
+    description:
+      - "Auxílio aos alunos com dúvidas sobre a disciplina;"
+      - "Aulas de dúvidas sobre o conteúdo da disciplina."
