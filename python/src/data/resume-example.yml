@@ -67,3 +67,10 @@ academic_experience:
     description:
       - "Auxílio aos alunos com dúvidas sobre a disciplina;"
       - "Aulas de dúvidas sobre o conteúdo da disciplina."
+
+languages:
+  - name: "Português"
+    proficiency: "Nativo"
+
+  - name: "Inglês"
+    proficiency: "Avançado"

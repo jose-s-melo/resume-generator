@@ -125,6 +125,28 @@
             {% endfor %}
         </div>
         {% endif %}
+
+        <!-- IDIOMAS -->
+        {% if languages %}
+        <div class="section">
+            <h2>Idiomas</h2>
+            <div class="section-line"></div>
+
+            {% if languages %}
+            {% for language in languages %}
+            <div class="item">
+                <strong>
+                    {{ language.name }}
+                </strong>
+
+                <ul>
+                    <li>{{ language.proficiency }}</li>
+                </ul>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% endif %}
     </div>
 
 </body>
