@@ -1,0 +1,131 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper, margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\definecolor{linkcolor}{RGB}{0,0,238}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    linkcolor=linkcolor
+}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{7pt}{1pt}
+
+\newcommand{\sectionline}{\vspace{-2pt}\noindent\rule{\linewidth}{0.6pt}\vspace{1pt}}
+
+\newcommand{\itemheader}[2]{%
+  \noindent
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r}
+    \textbf{#1} & \textit{#2}
+  \end{tabular*}\\[2pt]
+}
+
+\setlist[itemize]{leftmargin=16pt, itemsep=1pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Your Name}}\\[4pt]
+    Golang \textbar\ Spring \textbar\ Docker \textbar\ Java \\[6pt]
+    (00) 000000-0000 \textbar\
+    \href{mailto:your.email@example.com}{your.email@example.com} \textbar\
+    GitHub: \href{https://github.com/your-github}{your-github} \textbar\
+    LinkedIn: \href{https://linkedin.com/in/your-linkedin}{your-linkedin} \textbar\
+    Lattes: \href{http://lattes.cnpq.br/}{Your Lattes}
+\end{center}
+
+\vspace{1pt}
+
+\section*{Education}
+\sectionline
+
+\itemheader{Massachusetts Institute of Technology (MIT)}{July 2026 - 2030 (Expected)}
+M.Sc. in Computer Science\\
+Relevant Coursework: Machine Learning, and Artificial Intelligence
+
+\vspace{1pt}
+
+\itemheader{Massachusetts Institute of Technology (MIT)}{July 2026 - 2030 (Expected)}
+B.Sc. in Computer Science\\
+Relevant Coursework: Software Engineering, and Data Structures and Algorithms
+
+\vspace{1pt}
+
+
+\section*{Experience}
+\sectionline
+
+\itemheader{Google}{Jan 2026 - Present}
+\textbf{Software Developer}
+\begin{itemize}
+    \item Your responsibilities and achievements at Google;
+    \item Your responsibilities and achievements at Google.
+\end{itemize}
+
+\vspace{1pt}
+
+\itemheader{Microsoft}{Jan 2026 - Present}
+\textbf{Software Developer}
+\begin{itemize}
+    \item Your responsibilities and achievements at Microsoft;
+    \item Your responsibilities and achievements at Microsoft.
+\end{itemize}
+
+\vspace{1pt}
+
+
+\section*{Personal Projects}
+\sectionline
+
+\textbf{My Projects (Source code available at: \href{https://github.com/your-github/your-projects}{your-github/your-projects})}
+\begin{itemize}
+    \item Your project description and achievements;
+    \item Your project description and achievements.
+\end{itemize}
+
+\vspace{1pt}
+
+\textbf{My Projects (Source code available at: \href{https://github.com/your-github/your-projects}{your-github/your-projects})}
+\begin{itemize}
+    \item Your project description and achievements;
+    \item Your project description and achievements.
+\end{itemize}
+
+\vspace{1pt}
+
+\section*{Academic Experience}
+\sectionline
+
+\itemheader{Massachusetts Institute of Technology (MIT)}{Mar 2026 - Present}
+\textbf{Teaching Assistant - Data Structures and Algorithms}
+\begin{itemize}
+    \item Your responsibilities and achievements as a Teaching Assistant;
+    \item Your responsibilities and achievements as a Teaching Assistant.
+\end{itemize}
+
+\vspace{1pt}
+
+\itemheader{Massachusetts Institute of Technology (MIT)}{Jan 2026 - Feb 2026}
+\textbf{Teaching Assistant - Operational Systems}
+\begin{itemize}
+    \item Your responsibilities and achievements as a Teaching Assistant;
+    \item Your responsibilities and achievements as a Teaching Assistant.
+\end{itemize}
+
+\end{document}
