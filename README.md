@@ -25,8 +25,6 @@ A flexible and extensible resume generator that produces professional resumes fr
 ```text
 .
 ├── latex
-│   ├── copy.pdf
-│   ├── copy.tex
 │   ├── curriculum.pdf
 │   ├── curriculum.tex
 │   └── Makefile
