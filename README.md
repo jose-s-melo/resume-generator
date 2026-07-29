@@ -125,9 +125,9 @@ output/index.html
 
 ---
 
-## LaTeX
+## $\LaTeX$
 
-Navigate to the LaTeX directory.
+Navigate to the $\LaTeX$ directory.
 
 ```bash
 cd latex
